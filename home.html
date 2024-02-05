@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vastly | Home</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>  
+</head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo">V a s t l y</a>
+
+      <nav class="navbar">
+        <a href="https://vastly-network.xyz">Home</a>
+        <a href="#feature">Features</a>
+        <a href="https://ds.vastly-network.xyz">Support</a>
+        <a href="/apply">Staff</a>
+      </nav>
+    </header>
+
+    <section class="home">
+      <div class="home-content">
+        <h1>Hi, I'm Vastly</h1>
+        <h3>A Discord Bot</h3>
+        <p>
+          A highly configurable discord bot that is perfect for you wonderful
+          discord server with Moderation, Giveaways, Tickets and many more. 
+        </p>
+        <div class="btn-box">
+          <a
+            href="https://discord.com/api/oauth2/authorize?client_id=1203270790783438879&permissions=8&scope=bot"
+            >Invite Me</a
+          >
+          <a href="https://ds.vastly-network.asia">Support Server</a>
+        </div>
+      </div>
+
+      <div class="home-sci">
+        <a href="https://ds.vastly-network.xyz"><i class='bx bxl-discord-alt'></i></a>
+        <a href="mailto:uranium@vastly-network.asia"><i class='bx bx-envelope'></i></a>
+      </div>
+    </section>
+
+    <section id="feature" class="features">
+        <h2>Features</h2>
+        
+        <figure class="feature">
+            <img src="1.png" alt="Feature 1" />
+            <figcaption>
+                <h3>Powerful Moderation</h3>
+                <p>Vastly provides many moderation commands you can ever think of, such as /ban, /kick, /mute and many more.</p>
+            </figcaption>
+        </figure>
+
+        <figure class="feature reverse">
+            <img src="2.png" alt="Feature 2" />
+            <figcaption>
+                <h3>Wonderful Music</h3>
+                <p>Vastly provides a great Music system using Lavalink, you can play any songs or language around the world.</p>
+            </figcaption>
+        </figure>
+
+        <figure class="feature">
+            <img src="3.png" alt="Feature 3" />
+            <figcaption>
+                <h3>Great Utilities</h3>
+                <p>Vastly provides many utility commands such as /covid, /bigemoji, /github, it is very easy and fun to use.</p>
+            </figcaption>
+        </figure>
+    </section>
+
+    
+<section class="stats">
+    <h2>Bot Statistics</h2>
+    <div class="stat-row">
+        <i class="bx bx-user"></i>
+        <p>Total Servers: <span id="total-users">10</span></p>
+    </div>
+    <div class="stat-row">
+        <i class="bx bx-time"></i>
+        <p>Server Uptime: <span id="server-uptime">26 hours</span></p>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>About Us</h3>
+            <a href="Privacy Policy.pdf">Privacy Policy</a>
+            <a href="Terms of Service.pdf">Terms of Service</a>
+            <a href="/apply">Join The Team</a>
+        </div>
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <a href="https://ds.vastly-network.asia">Contact</a>
+            <a href="https://ds.vastly-network.asia">Support</a>
+        </div>
+        <div class="footer-section">
+            <h3>Useless</h3>
+            <a href="#">Coming Soon</a>
+            <!-- Add clock or time-related content here -->
+        <br>
+        <div class="footer-bottom">
+            <p>&copy; Vastly 2024. All Rights Reserved</p>
+        </div>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+              e.preventDefault();
+    
+              const targetId = this.getAttribute('href').substring(1);
+              const targetElement = document.getElementById(targetId);
+    
+              if (targetElement) {
+                window.scrollTo({
+                  top: targetElement.offsetTop,
+                  behavior: 'smooth'
+                });
+              }
+            });
+          });
+        });
+      </script>
+  </body>
+</html>
